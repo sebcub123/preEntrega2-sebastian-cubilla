@@ -1,0 +1,125 @@
+.main-contacto {
+    margin-bottom: 50px;
+    section {
+        width: 100%;
+        margin: 0 auto;
+
+        .intro-contacto {
+            width: 80%;
+            margin: 0 auto;
+            display: block;
+            margin-top: 10px;
+            text-align: center;
+
+            h2 {
+                .animate__animated .animate__bounce {
+
+                    animation-duration: 1.5s;
+                }
+            }
+        }
+
+        .container-intro-contacto {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            list-style: none;
+            width: 70%;
+            margin: 0 auto;
+            justify-items: center;
+            align-items: center;
+
+            .lista-container {
+                display: flex;
+                align-items: center;
+                padding: 5px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                width: 300px;
+                height: auto;
+                margin-top: 10px;
+                text-align: center;
+                font-family: none;
+
+                h4 {
+                    display: flex;
+                    align-items: center;
+                    font-size: 27px;
+                    height: 310px;
+                }
+            }
+
+            .form-contact {
+
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .contNombre {
+                    width: 300px;
+                    height: auto;
+                    padding: 10px;
+                    margin: 10px;
+                    border-radius: 0.375rem;
+                    border: none;
+
+                    input {
+                        border: none;
+                        text-align: center;
+                        width: 100%;
+                    }
+                }
+
+
+                .form-email {
+                    width: 300px;
+                    height: auto;
+                    margin: 10px;
+                    border-radius: 0.375rem;
+
+                    input {
+                        border: none;
+                        text-align: center;
+                        width: 100%;
+                    }
+                }
+
+                .text-area{
+                    border-radius: 0.375rem;
+                    
+                    .form-control {
+                        border: none;
+                        width: 100%;
+                        padding: 10px;
+                        resize: none;
+                    }
+                }
+
+                .contEnviar {
+                    width: 40%;
+                    height: auto;
+                    margin: 10px;
+                    text-align: center;
+                    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                    padding: 5px;
+                    border-radius: 0.375rem;
+                   
+
+                    .btn-enviar {
+                        width: 100%;
+                        height: auto;
+                        background-color: white;
+                        border: none;
+                        border-radius: 0.375rem;
+                        align-content: center;
+
+
+
+                        &:hover {
+                            color: #f8077f;
+                            font-weight: bolder;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

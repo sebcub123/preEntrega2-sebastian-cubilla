@@ -1,0 +1,57 @@
+.main-index {
+    height: 80%;
+    margin-top: 10px;
+
+    section {
+        width: 100%;
+        margin: 0 auto;
+
+        .intro-index {
+            width: 80%;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+
+            h1 {
+                strong {
+
+                    color: #f8077f;
+                }
+            }
+        }
+
+        .container-intro-index {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            list-style: none;
+            width: 70%;
+            margin: 0 auto;
+            justify-items: center;
+
+            .lista-container {
+                display: flex;
+                align-items: center;
+                padding: 5px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                width: 180px;
+                height: auto;
+                margin-top: 10px;
+                text-align: center;
+                font-family: none;
+            }
+        }
+    }
+
+
+    .carousel {
+        transition: all;
+        margin-top: 15px;
+    }
+
+    .img-oculta {
+
+        img {
+            display: none;
+        }
+    }
+}

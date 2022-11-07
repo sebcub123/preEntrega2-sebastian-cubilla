@@ -1,0 +1,29 @@
+.footer {
+    height: 120px;
+
+    p {
+        text-align: center;
+        padding: 5px;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        width: 100px;
+        margin: 0 auto;
+        justify-content: center;
+        padding-top: 15px;
+    }
+
+    li {
+        margin: 10px;
+    }
+
+    hr {
+        margin: 1rem 0;
+        color: #f8077f;
+        border: 0;
+        border-top: 5px solid;
+        opacity: .25;
+    }
+}

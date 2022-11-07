@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import './variables/extend';
+
+@import './secciones/header';
+
+@import './secciones/main-index';
+@import './secciones/main-nosotros';
+@import './secciones/main-tienda';
+@import './secciones/main-sucursales';
+@import './secciones/main-contacto';
+
+@import './secciones/footer';
+
+@import './secciones/mediasquerys';

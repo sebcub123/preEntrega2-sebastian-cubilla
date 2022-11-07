@@ -1,0 +1,179 @@
+@media (max-width: 1024px) {
+    .main-index {
+        height: 80%;
+    }
+
+    .carouselExampleIndicators {
+        margin-top: 2px;
+        display: flex;
+        align-content: center;
+    }
+
+}
+
+@media (max-width: 850px) {
+    .main-tienda {
+
+        .grid-contenedor {
+            grid-template-columns: repeat(2, 1fr) !important;
+        }
+    }
+
+    .main-index {
+        .container-intro-index {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr) !important;
+        }
+    }
+
+    .main-contacto{
+        .container-intro-contacto{
+            display: flex !important;
+            flex-direction: column-reverse;
+
+            .lista-container{
+                margin-bottom: 50px;
+            }
+
+            .form-contact{
+                width: 80%;
+                margin-top: 50px;
+                margin-bottom: 100px !important;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 650px) {
+
+    .header {
+        display: flex !important;
+    }
+
+    .main-index {
+
+        height: 80%;
+
+        .carousel {
+            display: none !important;
+        }
+
+        .img-oculta {
+
+            img {
+                display: flex !important;
+                width: 100%;
+                margin-top: 15px;
+            }
+
+        }
+    }
+
+    .main-nosotros {
+
+        .contTxt {
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
+
+
+    .main-tienda {
+
+        .grid-contenedor {
+            grid-template-columns: repeat(1, 1fr) !important;
+        }
+
+        .medios-de {
+            display: block;
+            text-align: center;
+
+
+            .medios-tarjeta {
+
+                border-left: none;
+                border-right: none;
+            }
+        }
+    }
+
+    .nav-form {
+        justify-content: start !important;
+    }
+
+
+}
+
+@media (max-width: 450px) {
+
+    .header {
+        display: inline-block;
+
+
+        .navbar-brand img {
+            width: 180px;
+        }
+
+        .nav-form {
+            justify-content: start !important;
+        }
+    }
+
+    .main-index {
+        .container-intro-index {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr) !important;
+        }
+    }
+
+
+
+
+    .main-sucursales {
+        display: block;
+        margin-top: 20px;
+
+        .map {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+
+    // .main-contacto {
+    //     display: flex;
+    //     justify-content: center;
+
+
+    //     .contNombre input {
+    //         width: 300px;
+    //         height: auto;
+    //         margin: 20px;
+    //         align-content: center;
+    //     }
+
+    //     .contEmail input {
+    //         width: 100px;
+    //         height: auto;
+    //         margin: 20px;
+    //     }
+
+    //     .contComentario textarea {
+    //         width: 100px;
+    //         height: auto;
+    //         margin: 20px;
+    //     }
+
+    //     .contEnviar input {
+    //         width: 100px;
+    //         height: auto;
+    //         margin: 20px;
+    //     }
+    // }
+
+    .footer li {
+        margin: 3px;
+    }
+}

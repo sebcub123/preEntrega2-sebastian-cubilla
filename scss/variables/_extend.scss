@@ -1,0 +1,9 @@
+%estilo-h1{
+    font-size: 48px;    
+}
+
+@mixin font-style ($color) {
+    text-align: center;
+    text-transform: uppercase;    
+    color: $color;
+}

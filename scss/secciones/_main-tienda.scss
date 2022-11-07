@@ -1,0 +1,114 @@
+.main-tienda {
+    height: 80%;
+
+    hr {
+        margin: 1rem 0;
+        color: #f8077f;
+        border: 0;
+        border-top: 5px solid;
+        opacity: .25;
+    }
+
+
+
+    h1 {
+        font-family: 'Dancing Script', cursive;
+        display: block;
+        font-size: 65px;
+        text-align: center;
+        padding: 5px;
+        margin: 0 auto;
+        background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20190223/ourmid/pngtree-warm-girl-heart-pink-banner-background-dropspink-gradient-backgroundwarmteenage-image_83306.jpg);
+
+        strong {
+            color: #f8077f;
+        }
+    }
+
+    .medios-de {
+        display: flex;
+        text-align: center;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 20px;
+        padding: 20px;
+
+        img {
+            margin: 0px auto;
+        }
+
+        p {
+            margin: 0px auto;
+        }
+
+        .medios-tarjeta{
+            padding: 25px;
+            border-left: #f8077f solid;
+            border-right: #f8077f solid;
+        }
+    }
+
+
+
+
+    .grid-contenedor {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 80%;
+        margin: 0 auto;
+        justify-items: center;
+
+        .card {
+            padding: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            width: 250px;
+            height: auto;
+            justify-content: space-between;
+            margin-top: 10px;
+            text-align: center;
+            font-family: arial;
+
+            img {
+                overflow: hidden;
+
+            }
+
+            .txt-card {
+                display: flex;
+                flex-wrap: wrap;
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+                width: 70%;
+                margin: 0 auto;
+
+
+                .price {
+                    color: #f8077f;
+                    font-size: 22px;
+                }
+
+                button {
+                    border: none;
+                    outline: 0;
+                    padding: 12px;
+                    background-color: #dbd0d0;
+                    text-align: center;
+                    cursor: pointer;
+                    width: 100%;
+                    font-size: 18px;
+                    opacity: 0.7;
+
+
+                    &:hover {
+
+                        color: #f8077f;
+                    }
+                }
+            }
+
+        }
+    }
+}

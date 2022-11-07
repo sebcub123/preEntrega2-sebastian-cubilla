@@ -1,0 +1,19 @@
+1- incorpore etiquetas meta keywords en todos los html:
+
+en index.html : "distribuidora, capilar, peluqueria, tintura, belleza, shampoo";
+en contacto.html : "distribuidora, contacto, consultas, presupuesto, belleza";
+en nosotros.html: "distribuidora, nosotros, conocer, filosofia, belleza";
+en sucursales.html: "distribuidora, sucursales, deposito, ubicacion, belleza";
+en tienda.html: "distribuidora, tienda, mayorista, compra, belleza, online";
+
+2- incorpore etiquetas meta description en todos los html:
+
+en index.html: "Distribuidora Beauty comercializa productos de belleza capilar por menor y mayor, con variedad de productos multimarca."
+en contacto.html: "Contactate con Distribuidora Beauty para acceder a las listas con los mejores productos y precios del mercado."
+en nosotros.html: "Nuestra filosofia se basa en comercializar las mejores y mas avanzadas marcas, tanto en calidad, como en tecnologia y precio..."
+en sucursales.html: "Distribuidora Beauty se encuentra en la localidad de Lanus, ingresa a la web para conocer como llegar..."
+en tienda.html: "Dentro de la tienda de Distribuidora Beauty vas a encontrar las mejores marcas y precios en el mundo de la cosmetica capilar, descubri las ofertas que tenemos constantemente.."
+
+3- incorpore dentro del proyecto el sitemap.xml
+
+4- agregue h1 en los html que no habia ocultandolos ya que no estaban destinados dentro de la pagina.

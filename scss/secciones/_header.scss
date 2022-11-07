@@ -1,0 +1,53 @@
+.header{
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 3px 5px #f8077f;
+    
+
+    
+    
+     a{
+    font-size: 18px !important;
+   
+
+        &:hover{
+        color: #f8077f !important;
+        font-weight: bolder;
+        }
+    }
+
+    img {
+        width: 175px;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .btn{
+        color: black !important;
+        border-color: #f8077f !important;
+   
+        &:hover{
+            background-color: #f8078054 !important;
+        }
+    }
+
+    nav{
+        width: 100%;
+   
+        .navbar .container-fluid{
+        justify-content: center;
+        }
+
+        .nav-form{
+            justify-content: end !important;
+            margin: 10px;
+        }
+
+        .nav-item{
+            padding: 10px;
+        }
+    }
+    .d-flex {
+        height: 35px;
+    }
+}
