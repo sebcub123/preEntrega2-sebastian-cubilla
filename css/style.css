@@ -15,7 +15,7 @@
     .header a:hover {
       color: #f8077f !important;
       font-weight: bolder; }
-  .header img {
+  .header .navbar-brand img {
     width: 175px;
     padding: 10px;
     justify-content: center; }
@@ -35,6 +35,9 @@
       padding: 10px; }
   .header .d-flex {
     height: 35px; }
+  .header .bi-cart {
+    display: flex;
+    align-items: center; }
 
 .main-index {
   height: 80%;
@@ -71,6 +74,44 @@
     margin-top: 15px; }
   .main-index .img-oculta img {
     display: none; }
+  .main-index .row {
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+  .main-index .imagen {
+    max-width: 100%; }
+  .main-index a {
+    cursor: pointer; }
+  .main-index .alerta {
+    font-weight: 700; }
+  .main-index .card-body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; }
+  .main-index .modal {
+    --bs-modal-width: 550px; }
+  .main-index .modal-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 2rem; }
+  .main-index .mt-3 {
+    margin: 3px; }
+  .main-index .img-fluid {
+    width: 200px;
+    padding: 20px; }
+  .main-index .modal-content {
+    background-color: #E3D8D6; }
+  .main-index .parrafo {
+    font-weight: 900;
+    font-style: italic; }
+  .main-index #precioTotal {
+    margin: 0;
+    padding: 0; }
+  .main-index a {
+    text-decoration: none; }
+  .main-index .boton {
+    opacity: 0; }
 
 .main-nosotros img {
   width: 100%;
@@ -97,6 +138,58 @@
   .main-nosotros .contTxt .titulo-nos {
     display: block; }
 
+.main-nosotros .row {
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+
+.main-nosotros .imagen {
+  max-width: 100%; }
+
+.main-nosotros a {
+  cursor: pointer; }
+
+.main-nosotros .alerta {
+  font-weight: 700; }
+
+.main-nosotros .card-body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
+
+.main-nosotros .modal {
+  --bs-modal-width: 550px; }
+
+.main-nosotros .modal-contenedor {
+  display: flex;
+  align-items: center;
+  gap: 2rem; }
+
+.main-nosotros .mt-3 {
+  margin: 3px; }
+
+.main-nosotros .img-fluid {
+  width: 200px;
+  padding: 20px; }
+
+.main-nosotros .modal-content {
+  background-color: #E3D8D6; }
+
+.main-nosotros .parrafo {
+  font-weight: 900;
+  font-style: italic; }
+
+.main-nosotros #precioTotal {
+  margin: 0;
+  padding: 0; }
+
+.main-nosotros a {
+  text-decoration: none; }
+
+.main-nosotros .boton {
+  opacity: 0; }
+
 .main-tienda {
   height: 80%; }
   .main-tienda hr {
@@ -115,6 +208,10 @@
     background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20190223/ourmid/pngtree-warm-girl-heart-pink-banner-background-dropspink-gradient-backgroundwarmteenage-image_83306.jpg); }
     .main-tienda h1 strong {
       color: #f8077f; }
+  .main-tienda .row {
+    display: flex;
+    justify-content: center;
+    width: 100%; }
   .main-tienda .medios-de {
     display: flex;
     text-align: center;
@@ -131,46 +228,84 @@
       padding: 25px;
       border-left: #f8077f solid;
       border-right: #f8077f solid; }
-  .main-tienda .grid-contenedor {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 80%;
-    margin: 0 auto;
-    justify-items: center; }
-    .main-tienda .grid-contenedor .card {
-      padding: 5px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      width: 250px;
-      height: auto;
-      justify-content: space-between;
-      margin-top: 10px;
-      text-align: center;
-      font-family: arial; }
-      .main-tienda .grid-contenedor .card img {
-        overflow: hidden; }
-      .main-tienda .grid-contenedor .card .txt-card {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        width: 70%;
-        margin: 0 auto; }
-        .main-tienda .grid-contenedor .card .txt-card .price {
-          color: #f8077f;
-          font-size: 22px; }
-        .main-tienda .grid-contenedor .card .txt-card button {
-          border: none;
-          outline: 0;
-          padding: 12px;
-          background-color: #dbd0d0;
-          text-align: center;
-          cursor: pointer;
-          width: 100%;
-          font-size: 18px;
-          opacity: 0.7; }
-          .main-tienda .grid-contenedor .card .txt-card button:hover {
-            color: #f8077f; }
+  .main-tienda .imagen {
+    max-width: 100%; }
+  .main-tienda a {
+    cursor: pointer; }
+  .main-tienda .alerta {
+    font-weight: 700; }
+  .main-tienda .card-body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; }
+  .main-tienda .modal {
+    --bs-modal-width: 550px; }
+  .main-tienda .modal-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 2rem; }
+  .main-tienda .mt-3 {
+    margin: 3px; }
+  .main-tienda .img-fluid {
+    width: 200px;
+    padding: 20px; }
+  .main-tienda .modal-content {
+    background-color: #E3D8D6; }
+  .main-tienda .parrafo {
+    font-weight: 900;
+    font-style: italic; }
+  .main-tienda #precioTotal {
+    margin: 0;
+    padding: 0; }
+  .main-tienda a {
+    text-decoration: none; }
+  .main-tienda .boton {
+    opacity: 0; }
+
+.main-carrito {
+  width: 80%;
+  margin: 0 auto; }
+  .main-carrito #lista-compra tbody {
+    width: 100%; }
+  .main-carrito .row {
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+  .main-carrito .imagen {
+    max-width: 100%; }
+  .main-carrito a {
+    cursor: pointer; }
+  .main-carrito .alerta {
+    font-weight: 700; }
+  .main-carrito .card-body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; }
+  .main-carrito .modal {
+    --bs-modal-width: 550px; }
+  .main-carrito .modal-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 2rem; }
+  .main-carrito .mt-3 {
+    margin: 3px; }
+  .main-carrito .img-fluid {
+    width: 200px;
+    padding: 20px; }
+  .main-carrito .modal-content {
+    background-color: #E3D8D6; }
+  .main-carrito .parrafo {
+    font-weight: 900;
+    font-style: italic; }
+  .main-carrito #precioTotal {
+    margin: 0;
+    padding: 0; }
+  .main-carrito a {
+    text-decoration: none; }
+  .main-carrito .boton {
+    opacity: 0; }
 
 .main-sucursales {
   margin-top: 10px;
@@ -184,6 +319,44 @@
     font-size: 24px; }
   .main-sucursales .map {
     width: 100%; }
+  .main-sucursales .row {
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+  .main-sucursales .imagen {
+    max-width: 100%; }
+  .main-sucursales a {
+    cursor: pointer; }
+  .main-sucursales .alerta {
+    font-weight: 700; }
+  .main-sucursales .card-body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; }
+  .main-sucursales .modal {
+    --bs-modal-width: 550px; }
+  .main-sucursales .modal-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 2rem; }
+  .main-sucursales .mt-3 {
+    margin: 3px; }
+  .main-sucursales .img-fluid {
+    width: 200px;
+    padding: 20px; }
+  .main-sucursales .modal-content {
+    background-color: #E3D8D6; }
+  .main-sucursales .parrafo {
+    font-weight: 900;
+    font-style: italic; }
+  .main-sucursales #precioTotal {
+    margin: 0;
+    padding: 0; }
+  .main-sucursales a {
+    text-decoration: none; }
+  .main-sucursales .boton {
+    opacity: 0; }
 
 .main-contacto {
   margin-bottom: 50px; }
@@ -270,6 +443,44 @@
             .main-contacto section .container-intro-contacto .form-contact .contEnviar .btn-enviar:hover {
               color: #f8077f;
               font-weight: bolder; }
+  .main-contacto .row {
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+  .main-contacto .imagen {
+    max-width: 100%; }
+  .main-contacto a {
+    cursor: pointer; }
+  .main-contacto .alerta {
+    font-weight: 700; }
+  .main-contacto .card-body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; }
+  .main-contacto .modal {
+    --bs-modal-width: 550px; }
+  .main-contacto .modal-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 2rem; }
+  .main-contacto .mt-3 {
+    margin: 3px; }
+  .main-contacto .img-fluid {
+    width: 200px;
+    padding: 20px; }
+  .main-contacto .modal-content {
+    background-color: #E3D8D6; }
+  .main-contacto .parrafo {
+    font-weight: 900;
+    font-style: italic; }
+  .main-contacto #precioTotal {
+    margin: 0;
+    padding: 0; }
+  .main-contacto a {
+    text-decoration: none; }
+  .main-contacto .boton {
+    opacity: 0; }
 
 .footer {
   height: 120px; }

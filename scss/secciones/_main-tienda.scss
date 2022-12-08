@@ -24,6 +24,13 @@
             color: #f8077f;
         }
     }
+    
+    .row{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
 
     .medios-de {
         display: flex;
@@ -50,65 +57,67 @@
     }
 
 
-
-
-    .grid-contenedor {
-
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        width: 80%;
-        margin: 0 auto;
-        justify-items: center;
-
-        .card {
-            padding: 5px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            width: 250px;
-            height: auto;
-            justify-content: space-between;
-            margin-top: 10px;
-            text-align: center;
-            font-family: arial;
-
-            img {
-                overflow: hidden;
-
-            }
-
-            .txt-card {
-                display: flex;
-                flex-wrap: wrap;
-                align-content: center;
-                justify-content: center;
-                align-items: center;
-                width: 70%;
-                margin: 0 auto;
-
-
-                .price {
-                    color: #f8077f;
-                    font-size: 22px;
-                }
-
-                button {
-                    border: none;
-                    outline: 0;
-                    padding: 12px;
-                    background-color: #dbd0d0;
-                    text-align: center;
-                    cursor: pointer;
-                    width: 100%;
-                    font-size: 18px;
-                    opacity: 0.7;
-
-
-                    &:hover {
-
-                        color: #f8077f;
-                    }
-                }
-            }
-
-        }
+    .imagen {
+        max-width: 100%;
+    }
+    
+    a {
+        cursor: pointer;
+    }
+    
+    .alerta {
+        font-weight: 700;
+    }
+    
+    
+    .card-body{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    
+    .modal{
+        --bs-modal-width: 550px;
+    }
+    .modal-contenedor {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    
+    
+    .mt-3 {
+        margin: 3px;
+    }
+    
+    .img-fluid {
+        width: 200px;
+        padding: 20px;
+    }
+    
+    .modal-content {
+        background-color: #E3D8D6;
+    }
+    
+    .parrafo {
+        font-weight: 900;
+        font-style: italic;
+    }
+    
+    #precioTotal {
+        margin: 0;
+        padding: 0;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .boton {
+        opacity: 0;
     }
 }

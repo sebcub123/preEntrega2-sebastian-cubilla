@@ -15,11 +15,13 @@
         font-weight: bolder;
         }
     }
+    .navbar-brand{
 
-    img {
-        width: 175px;
-        padding: 10px;
-        justify-content: center;
+        img {
+            width: 175px;
+            padding: 10px;
+            justify-content: center;
+        }
     }
 
     .btn{
@@ -49,5 +51,9 @@
     }
     .d-flex {
         height: 35px;
+    }
+    .bi-cart{
+        display: flex;
+        align-items: center;
     }
 }

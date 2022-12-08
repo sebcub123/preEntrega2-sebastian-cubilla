@@ -12,9 +12,15 @@
     <!-- descripcion -->
     <meta name="description"
         content="Dentro de la tienda de Distribuidora Beauty vas a encontrar las mejores marcas y precios en el mundo de la cosmetica capilar, descubri las ofertas que tenemos constantemente..">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css">
     <title>Beauty | Tienda</title>
 </head>
@@ -57,10 +63,17 @@
             </div>
             <div class="container-fluid nav-form">
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Busca tu Producto" aria-label="Search">
+                    <input class="form-control me-2" id="search" type="search" placeholder="Busca tu Producto" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
             </div>
+            <ul class="navbar-nav">
+                <li>
+                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modal">
+                        <i class="bi bi-cart" id="carritoContenedor">0</i>
+                    </a>
+                </li>
+            </ul>
         </nav>
     </header>
 
@@ -68,91 +81,42 @@
     <main class="main-tienda">
         <h1>Bienvenidos a tienda <strong>Beauty</strong></h1>
 
-        <div class="grid-contenedor">
-            <div class="card">
-                <img src="../imagenes/productos/protector yilho.png" alt="Protector Yilho">
-                <div class="txt-card">
-                    <p class="price">$1156</p>
-                    <p>Protector Termico X 125cc. con gatillo</p>
-                    <button>Agregar al carrito</button>
+        <div class="row mt-5" id="contenedor"></div>
+
+
+        <div class="container-xl">
+            <div class="modal" tabindex="-1" role="dialog" id="modal">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Carrito</h5>
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body"></div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" id="vaciarCarrito">
+                                Vaciar carrito
+                            </button>
+                            <button type="button" id="procesarCompra" class="btn btn-primary">
+                                Continuar compra
+                            </button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                Cerrar
+                            </button>
+
+                            <span>Precio total:</span>
+                            <p class="text-center" id="precioTotal"></p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="card">
-                <img src="../imagenes/productos/conditioner-keratin_2.jpg" alt="Acondicionador keratina">
-                <div class="txt-card">
-                    <p class="price">$595</p>
-                    <p>Acondicionador FIDELITE Keratina X 240ml.</p>
-                    <p><button>Agregar al carrito</button></p>
-                </div>
-            </div>
-
-
-            <div class="card">
-                <img src="../imagenes/productos/guantenitrilo.jpeg" alt="Guantes nitrilo">
-                <div class="txt-card">
-                    <p class="price">$50</p>
-                    <p>Guantes de Nitrilo negro x Par</p>
-                    <p><button>Agregar al carrito</button></p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="../imagenes/productos/crema mav.png" alt="Crema Mav">
-                <div class="txt-card">
-                    <p class="price">$986</p>
-                    <p>Crema de peinar MAV Macadamia y Caviar para todo tipo de cabello X 250ml.</p>
-                    <p><button>Agregar al carrito</button></p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="../imagenes/productos/ionizado.jpeg" alt="Ionizado nov">
-                <div class="txt-card">
-                    <p class="price">$663</p>
-                    <p>Ionizado Nov X 3 ampollas</p>
-                    <p><button>Agregar al carrito</button></p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="../imagenes/productos/crema-de-peinado-multiaccion.png" alt="Crema multi">
-                <div class="txt-card">
-                    <p class="price">$765</p>
-                    <p>Crema de peinar caviar FIDELITE para todo tipo de cabellos X 250ml.</p>
-                    <p><button>Agregar al carrito</button></p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="../imagenes/productos/cremapeinarargan.jpeg" alt="Crema peinar argan">
-                <div class="txt-card">
-                    <p class="price">$833</p>
-                    <p>Crema de Peinar Caviar FIDELITE de Argan X 250ml.</p>
-                    <p><button>Agregar al carrito</button></p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="../imagenes/productos/serumbekim.jpeg" alt="serum bekim">
-                <div class="txt-card">
-                    <p class="price">$1411</p>
-                    <p>Serum Bekim Argan X 30ml.</p>
-                    <p><button>Agregar al carrito</button></p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="../imagenes/productos/cremapeinarrbx.jpeg" alt="Crema peinar rbx">
-                <div class="txt-card">
-                    <p class="price">$544</p>
-                    <p>Crema de Peinar RBX para todo tipo de cabellos x 300ml.</p>
-                    <p><button>Agregar al carrito</button></p>
-                </div>
-            </div>
-
         </div>
+
+
         <br><br>
+
         <div class="medios-de">
             <div>
                 <img src="../imagenes/icons/envio.png" alt="envio">
@@ -189,12 +153,16 @@
             Cubilla </p>
     </footer>
 
-    <!-- js -->
-    <script src="../js/app.js"></script>
     <!-- js de bootstrap -->
+    <script src="../bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- js -->
+    <script src="../js/data.js"></script>
+    <script src="../js/carrito.js"></script>
+    <script src="../js/app.js"></script>
 </body>
 
 </html>
